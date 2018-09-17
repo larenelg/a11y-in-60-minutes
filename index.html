@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/night.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,30 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1 style="font-size: 5rem">Accessibility<br /> in sixty minutes<br />⏲</h1>
+				</section>
+				<!-- <section>
+					<p class="fragment">Why is talking about accessibility<br /> difficult?</p>
+					<p class="fragment" style="font-size: 3.5rem">Because talking about disability<br /> is <strong>awkward</strong>.</p>
+				</section>
+				<section>
+					<h1 style="font-size: 3rem">WHO defines...</h1>
+					<div style="display: flex">
+						<div style="flex: 1">
+							<h2 style="font-size: 2rem">1980</h2>
+							<p>Disability as personal attribute</p>
+							<blockquote style="font-size: 1rem">“In the context of health experience,<br /> a disability is any restriction<br /> or lack of ability (resulting from an impairment)<br /> to perform an activity [...]<br /> within the range considered normal for a human being.”</blockquote>
+							<p>– World Health Organization</p>
+						</div>
+						<div style="flex: 1">
+							<h2 style="font-size: 2rem">Today</h2>
+							<p>Disability as context dependent</p>
+							<blockquote style="font-size: 1rem">“Disability is not just a health problem. It is a complex phenomenon, reflecting the interaction between features of a person’s body and features of the society in which they live.”</blockquote>
+							<p>– World Health Organization</p>
+						</div>
+					</div>
+				</section> -->
 			</div>
 		</div>
 
@@ -37,6 +59,7 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				history: true,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
