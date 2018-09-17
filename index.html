@@ -28,6 +28,61 @@
 					<h1 style="font-size: 5rem; width: 50rem; margin: 0 auto;">Accessibility in sixty minutes</h1>
 					<aside style="font-size: 5rem; margin-top: 4rem;" aria-hidden="true">⏲</aside>
 				</section>
+				<section data-transition="none">
+					<pre>
+						<code class="html" data-trim contenteditable style="font-size: 1.6rem;">
+&lt;section className=&quot;container&quot;&gt;
+&lt;h2&gt;
+                                                          
+	Submit an issue
+&lt;&#x2F;h2&gt;
+	{form}
+&lt;&#x2F;section&gt;
+						</code>
+					</pre>
+				</section>
+				<section>
+					<aside aria-hidden="true">Static HTML</aside>
+					<h2>Submit an issue</h2>
+				</section>
+				<section>
+					<aside aria-hidden="true">Javascript-loaded HTML</aside>
+					<div id="h2-issue-not-a6ble">
+						loading...
+					</div>
+					<script>
+						setTimeout(function () {
+							var html = "<h2>Submit an issue</h2>";
+							document.getElementById('h2-issue-not-a6ble').innerHTML = html;
+						}, 2000);
+					</script>
+				</section>
+				<section data-transition="none">
+						<pre>
+							<code class="react" data-trim contenteditable style="font-size: 1.6rem;">
+&lt;section className=&quot;container&quot;&gt;
+&lt;h2 tabIndex=&quot;-1&quot; 
+    ref={heading =&gt; heading &amp;&amp; heading.focus()}&gt;
+	Submit an issue
+&lt;&#x2F;h2&gt;
+	{form}
+&lt;&#x2F;section&gt;
+							</code>
+						</pre>
+					</section>
+					<section>
+						<aside aria-hidden="true">Javascript-loaded HTML</aside>
+						<div id="h2-issue-not-a6ble-2">
+							loading...
+						</div>
+						<script>
+							setTimeout(function () {
+								var html = '<h2 id="vqng" tabindex="-1">Submit an issue</h2>';
+								document.getElementById('h2-issue-not-a6ble-2').innerHTML = html;
+								document.getElementById('vqng').focus();
+							}, 2000);
+						</script>
+					</section>
 			</div>
 		</div>
 
